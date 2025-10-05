@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEF Delivery | Diesel Exhaust Fluid | Turbo Green Fuel</title>
+    <meta name="description" content="Professional DEF delivery services for commercial fleets. Reliable diesel exhaust fluid supply with expert customer service.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c5530, #4a7c59);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #7dd87f;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7dd87f;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 85, 48, 0.5), rgba(74, 124, 89, 0.5)), 
+                        url('https://images.unsplash.com/photo-1696583545294-a0158d7afa63?ixlib=rb-4.0.3&auto=format&fit=crop&w=2089&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #7dd87f;
+            color: #2c5530;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(125, 216, 127, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #6bc66f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(125, 216, 127, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h2 {
+            color: #2c5530;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #2c5530;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            background: #7dd87f;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, #2c5530, #4a7c59);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .quote-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .quote-section p {
+            margin-bottom: 2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .faq-section h2 {
+            color: #2c5530;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1rem;
+            cursor: pointer;
+            background: white;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-question h3 {
+            color: #2c5530;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+            padding-right: 1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: #7dd87f;
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 1rem;
+        }
+
+        .faq-answer.active {
+            max-height: 1000px;
+            padding: 1rem 1rem 1.5rem 1rem;
+        }
+
+        .faq-answer p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c5530;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #7dd87f;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p, .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #7dd87f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                background-attachment: scroll;
+                min-height: 50vh;
+                padding: 4rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Turbo Green Fuel</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <span>📞 (213) 537-5526</span>
+                    <span>✉️ info@turbogreenfuel.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Professional DEF Delivery</h1>
+            <p>Your trusted partner for reliable Diesel Exhaust Fluid supply and services</p>
+            <a href="#contact" class="cta-button">Get a Risk-Free Quote Today!</a>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="content-section" id="services">
+                <h2>Complete DEF Solutions</h2>
+                <p>Turbo Green Fuel has all your DEF needs covered. As a leading diesel exhaust fluid supplier, we have the personnel, equipment, and knowledge necessary to take care of any DEF requirements your business is facing.</p>
+                <p>When you work with Turbo Green Fuel, you will discover our difference – customer service. Rest easy knowing that our team will treat your business like an extension of our family.</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚛</div>
+                        <h3>Bulk DEF Delivery</h3>
+                        <p>Regular scheduled deliveries of high-quality diesel exhaust fluid directly to your location. We ensure your fleet never runs out.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⛽</div>
+                        <h3>On-Site DEF Systems</h3>
+                        <p>Professional installation and maintenance of on-site DEF storage and dispensing systems for maximum convenience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Equipment Maintenance</h3>
+                        <p>Complete maintenance services for your DEF systems, ensuring optimal performance and compliance with regulations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌙</div>
+                        <h3>After-Hours Service</h3>
+                        <p>Emergency DEF delivery and support when you need it most. We're available 24/7 for critical situations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💳</div>
+                        <h3>Fleet Cards</h3>
+                        <p>Convenient fuel and DEF cards for your drivers, providing easy access to DEF at locations across the region.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏭</div>
+                        <h3>Industrial Solutions</h3>
+                        <p>Specialized DEF solutions for construction, mining, agriculture, and other industrial applications.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Turbo Green Fuel?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Premium DEF meeting all industry standards and specifications</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Reliable, on-time delivery to keep your operations running smoothly</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>Expert Service</h3>
+                    <p>Knowledgeable team with years of experience in the fuel industry</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Fair, transparent pricing with no hidden fees or surprises</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safe & Compliant</h3>
+                    <p>Full compliance with environmental and safety regulations</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📞</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your DEF needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section" id="contact">
+        <div class="container">
+            <h2>We Keep Your Fleet Moving!</h2>
+            <p>Turbo Green Fuel will answer any DEF questions you might have and help figure out which services best fit your needs. Give us a call – we are happy to help guide you to the perfect solution!</p>
+            <a href="tel:2135375526" class="cta-button">Call (213) 537-5526</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 (213) 537-5526</p>
+                    <p>✉️ info@turbogreenfuel.com</p>
+                    <p>📍 Your Business Address</p>
+                    <p>City, State ZIP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Bulk DEF Delivery</li>
+                        <li>On-Site DEF Systems</li>
+                        <li>Equipment Maintenance</li>
+                        <li>Emergency Service</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+                    <p>Saturday: 8:00 AM - 4:00 PM</p>
+                    <p>Sunday: Emergency Service Only</p>
+                    <p>24/7 Emergency Support Available</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Turbo Green Fuel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(44, 85, 48, 0.95), rgba(74, 124, 89, 0.95))';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
