@@ -222,6 +222,86 @@
             margin-bottom: 2rem;
         }
 
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .faq-section h2 {
+            color: #2c5530;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1rem;
+            cursor: pointer;
+            background: white;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-question h3 {
+            color: #2c5530;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+            padding-right: 1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: #7dd87f;
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 1rem;
+        }
+
+        .faq-answer.active {
+            max-height: 1000px;
+            padding: 1rem 1rem 1.5rem 1rem;
+        }
+
+        .faq-answer p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
         /* Footer */
         footer {
             background: #2c5530;
